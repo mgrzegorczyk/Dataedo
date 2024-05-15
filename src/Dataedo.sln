@@ -2,6 +2,12 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dataedo.API", "Dataedo.API\Dataedo.API.csproj", "{72B44B9F-52A3-4724-82B6-4CCBF616B772}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dataedo.Infrastructure", "Dataedo.Infrastructure\Dataedo.Infrastructure.csproj", "{9203918E-E434-41FC-85CF-53A1E65A1BDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dataedo.Domain", "Dataedo.Domain\Dataedo.Domain.csproj", "{1EAAB8B5-2CAF-4F33-84F1-AF01DDEE2CF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dataedo.Application", "Dataedo.Application\Dataedo.Application.csproj", "{F046992D-F208-430B-8DFB-B2B64973B922}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +18,17 @@ Global
 		{72B44B9F-52A3-4724-82B6-4CCBF616B772}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72B44B9F-52A3-4724-82B6-4CCBF616B772}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72B44B9F-52A3-4724-82B6-4CCBF616B772}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9203918E-E434-41FC-85CF-53A1E65A1BDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9203918E-E434-41FC-85CF-53A1E65A1BDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9203918E-E434-41FC-85CF-53A1E65A1BDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9203918E-E434-41FC-85CF-53A1E65A1BDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EAAB8B5-2CAF-4F33-84F1-AF01DDEE2CF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EAAB8B5-2CAF-4F33-84F1-AF01DDEE2CF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EAAB8B5-2CAF-4F33-84F1-AF01DDEE2CF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EAAB8B5-2CAF-4F33-84F1-AF01DDEE2CF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F046992D-F208-430B-8DFB-B2B64973B922}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F046992D-F208-430B-8DFB-B2B64973B922}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F046992D-F208-430B-8DFB-B2B64973B922}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F046992D-F208-430B-8DFB-B2B64973B922}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

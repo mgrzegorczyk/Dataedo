@@ -1,15 +1,27 @@
+using Dataedo.Application.Commands;
+using Dataedo.Application.Queries;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Dataedo.API.Controllers;
 
-public class UsersController : ControllerBase
+[Route("api/[controller]")]
+[ApiController]
+public class UserController(IMediator mediator) : ControllerBase
 {
-    [HttpPost ("delete/{id}")] public void Delete (uint id)
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> Delete(Guid id)
     {
-        // User user = _context.Users.FirstOrDefault(user => user.Id == id);
-        // _context.Users.Remove(user);
-        // _context.SaveChanges();
-        // Debug.WriteLine($"The user with Login={user.login} has been deleted.");
-        // return Ok ();
+        await mediator.Send(new DeleteUserCommand(id));
+
+        return NoContent();
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> GetAll()
+    {
+        var users = await mediator.Send(new GetUsersQuery());
+
+        return Ok(users);
     }
 }
