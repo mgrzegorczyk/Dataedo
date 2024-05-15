@@ -31,7 +31,7 @@ return Ok();
 - akcja została wykonana i nie ma potrzeby dostarczania dalszych informacji, dlatego zwróciłbym NoContent() - 204, zamiast Ok() - 200
 
 # Opis poprawionej implementacji
-- projekty w solucji są podzielone w stylu Clean Architecture (API, Domain, Infrastructure, Application)
+- projekty w solucji są podzielone w stylu Clean Architecture (API, Domain, Infrastructure, Application, Tests)
 - projektem startowym jest API
 - API zawiera UserController który posiada endpointy odpowiedzialne za zwrócenie wszystkich użytkowników oraz usunięcie użytkownika o danym ID
 - operacje wykonuję asynchronicznie
@@ -41,3 +41,4 @@ return Ok();
 - loguję za pomocą Nlog w konsoli
 - stosuję soft delete
 - nie używam contextu w kontrolerze, zastosowałem CQRS i korzystam z MediatR
+- dodałem przykładowy test dla handlera delete
