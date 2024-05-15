@@ -7,12 +7,13 @@ namespace Dataedo.API.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-public class UserController(IMediator mediator) : ControllerBase
+public class UserController(IMediator mediator, ILogger<UserController> logger) : ControllerBase
 {
     [HttpDelete("{id}")]
     public async Task<IActionResult> Delete(Guid id)
     {
         await mediator.Send(new DeleteUserCommand(id));
+        logger.LogInformation($"User with ID {id} deleted!");
 
         return NoContent();
     }
