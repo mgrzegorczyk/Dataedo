@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dataedo.Domain", "Dataedo.D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dataedo.Application", "Dataedo.Application\Dataedo.Application.csproj", "{F046992D-F208-430B-8DFB-B2B64973B922}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dataedo.Tests", "Dataedo.Tests\Dataedo.Tests.csproj", "{A34DC3CD-6F80-4950-BEDD-048736D38F95}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{F046992D-F208-430B-8DFB-B2B64973B922}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F046992D-F208-430B-8DFB-B2B64973B922}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F046992D-F208-430B-8DFB-B2B64973B922}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A34DC3CD-6F80-4950-BEDD-048736D38F95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A34DC3CD-6F80-4950-BEDD-048736D38F95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A34DC3CD-6F80-4950-BEDD-048736D38F95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A34DC3CD-6F80-4950-BEDD-048736D38F95}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
